@@ -1,0 +1,2186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "questa";
+  src: url("../font/questa.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+li {
+}
+a {
+  text-decoration: none;
+}
+.hover-red:hover {
+  color: rgb(240, 30, 80);
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height for horizontal scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Darker gray for the thumb */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Adds padding around the thumb for a more polished look */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darkens the thumb on hover for better visibility */
+}
+/* header */
+
+.header-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  position: relative;
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 0;
+  column-gap: 28px;
+}
+.toggle-nav {
+  display: none;
+}
+.close-nav {
+  display: none;
+}
+.logo-link {
+  color: white;
+}
+
+.logo-link img {
+  width: 150px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+}
+.nav ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: red;
+}
+.menu-top {
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+.lang {
+}
+
+.menu-bottom {
+  column-gap: 28px;
+}
+.header-btns {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+}
+.header-btns a {
+  color: white;
+  padding: 9px 31px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.res-para {
+  background: #e01f1f;
+}
+.res-para:hover {
+  color: rgb(221, 212, 212);
+  background-color: #7c4141;
+}
+.res-tab {
+  background-color: white;
+  color: black !important;
+}
+.res-tab:hover {
+  background-color: rgb(207, 196, 196);
+  color: #b34b4b !important;
+}
+
+.custom-select-container {
+  position: relative;
+  left: -158px;
+  background: transparent;
+  border: none;
+}
+.custom-select {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 3px 1px;
+}
+.custom-select option {
+  color: black;
+}
+.custom-select:hover {
+  border-color: #2980b9;
+}
+
+.custom-select:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* scroll nav bar */
+.s-header {
+  margin: 0 auto;
+  display: none;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  column-gap: 28px;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid black;
+}
+.s-logo-icon {
+  display: none;
+}
+.s-logo-link {
+  color: rgb(0, 0, 0);
+}
+.s-logo-link img {
+  width: 150px;
+}
+.s-logo-link h2 {
+}
+.s-logo-link p {
+}
+.s-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.s-nav ul {
+  display: flex;
+}
+.s-nav ul li {
+}
+.s-nav ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+.s-nav ul li a:hover {
+  color: red;
+}
+.s-menu-top {
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+.book {
+  display: none;
+}
+.knife {
+  display: none;
+}
+.s-lang {
+}
+
+.s-menu-bottom {
+  column-gap: 28px;
+}
+.s-header-btns {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+}
+.s-header-btns a {
+  color: white;
+  padding: 9px 31px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.s-res-para {
+  background: #e01f1f;
+}
+.s-res-para:hover {
+  color: rgb(221, 212, 212);
+  background-color: #7c4141;
+}
+.s-res-tab {
+  background-color: white;
+  color: black !important;
+}
+.s-res-tab:hover {
+  background-color: rgb(207, 196, 196);
+  color: #b34b4b !important;
+}
+
+.s-custom-select-container {
+  position: relative;
+  left: -158px;
+  background: transparent;
+  border: none;
+}
+.s-custom-select {
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 3px 1px;
+}
+.s-custom-select option {
+  color: black;
+}
+.s-custom-select:hover {
+  border-color: #2980b9;
+}
+
+.s-custom-select:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* scroll nav responsive */
+@media (max-width: 1200px) {
+  .t-nav {
+    z-index: 1000;
+    color: black !important;
+  }
+  .s-header {
+    padding: 12px 0;
+    justify-content: flex-end;
+  }
+  .s-logo-link img {
+    display: none;
+  }
+  .s-logo-icon {
+    display: block !important;
+    color: black;
+    margin-top: 6px;
+    font-size: 21px;
+  }
+  .s-nav-hr {
+    display: none;
+  }
+  .s-custom-select-container {
+    display: none;
+  }
+  .s-menu-bottom {
+    display: none !important;
+  }
+  .s-header-btns {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1000px) {
+  .s-header {
+    justify-content: space-around;
+  }
+  .s-menu-top {
+    display: none !important;
+  }
+}
+@media (max-width: 900px) {
+  .s-header {
+    justify-content: flex-end;
+    padding: 12px 10px;
+  }
+  .s-menu-top {
+    display: flex !important;
+  }
+  .s-menu-top span {
+    display: none;
+  }
+  .book {
+    display: block;
+  }
+  .knife {
+    display: block;
+  }
+  .s-header-btns {
+    display: none;
+  }
+}
+/* hero section */
+
+.hero {
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-family: "questa";
+  color: white;
+  font-size: 56px;
+  font-weight: 300;
+  text-align: left;
+  font-style: italic;
+  margin-top: 65px;
+}
+.hero h2 {
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  margin-top: 13px;
+}
+.hero form {
+}
+.hero form .hero-search-box {
+  padding: 12px 13px;
+  border: 1px solid #ddd;
+  width: 770px;
+  margin: 0 auto 43px;
+  margin-top: 89px;
+}
+
+.hero form i {
+  color: red;
+  display: inline-block;
+  margin-right: 5px;
+}
+.hero form input {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  width: 80%;
+  border: none;
+  color: white;
+}
+.hero form input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hero form input:focus {
+  border: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.hero p {
+  text-align: center;
+}
+.hero p i {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 2px;
+  position: relative;
+  top: 2px;
+}
+.hero p a {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+.hero-hr {
+  width: 205px;
+  margin: 5px auto;
+}
+.vertical-line {
+  position: absolute;
+  left: 149px;
+  bottom: 0;
+  height: 349px;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+/* Styling for the diagonal line */
+.vertical-line::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Adjust starting position */
+  top: 0;
+  width: 50px; /* Length of the diagonal line */
+  height: 2px; /* Thickness of the diagonal line */
+  background-color: rgb(184, 179, 179); /* Color of the diagonal line */
+}
+
+/* header sction responsive */
+@media (max-width: 1276px) {
+  .vertical-line {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header-section {
+    padding: 0 16px;
+  }
+  .hero h1 {
+    margin-top: 12px;
+  }
+  .header {
+    flex-direction: column;
+    row-gap: 6px;
+    position: relative;
+    padding: 29px 12px;
+  }
+  .toggle-nav {
+    display: block;
+  }
+  .toggle-nav i {
+    color: white;
+    font-size: 32px;
+    position: fixed;
+    left: 12px;
+    top: 10px;
+  }
+  .mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 90;
+    display: none;
+  }
+  .close-nav {
+    display: block;
+    z-index: 100;
+    color: black;
+    font-size: 32px;
+    position: fixed;
+    left: 12px;
+    top: 10px;
+  }
+  .menu-top {
+    position: absolute;
+    right: -1px;
+    top: 8px;
+    column-gap: 12px;
+  }
+  .lang {
+    display: none;
+  }
+  .nav-hr {
+    display: none;
+  }
+  .menu-bottom {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-top li a span {
+    display: none;
+  }
+  .hero-content {
+    max-width: 655px;
+  }
+
+  .hero form .hero-search-box {
+    margin-top: 18px;
+    width: 649px;
+  }
+  .menu-top li a i {
+    font-size: 19px;
+  }
+  .menu-top {
+    right: 4px;
+    top: 15px;
+  }
+}
+@media (max-width: 680px) {
+  .hero form .hero-search-box {
+    width: 440px;
+    margin: 30px auto;
+  }
+  .hero h1 {
+    font-size: 43px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 49px 12px 20px;
+  }
+  .hero form .hero-search-box {
+    width: 324px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero h2 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .hero form .hero-search-box {
+    width: 261px;
+  }
+}
+@media (max-width: 500px) {
+  .menu-top li a i {
+    font-size: 13px;
+  }
+}
+/* destination section */
+.destination-section {
+  padding: 60px 0;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.destination-section h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  padding-left: 12px;
+  border-left: 1px solid black;
+  margin-bottom: 25px;
+}
+.dest-slider-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.dest-slider-btns {
+  text-align: right;
+}
+.dest-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.dest-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dest-slide {
+  flex: 0 0 calc(50% - 6px);
+  margin-right: 12px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.dest-slide:hover .dest-slide-content::after {
+  background-color: rgba(124, 123, 123, 0.3);
+}
+
+.dest-slide a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.dest-slide img {
+}
+.dest-slide-content {
+  text-align: left;
+  position: absolute;
+  left: 47px;
+  top: 27px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.dest-slide-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -46px;
+  top: -29px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+.dest-slide-content h4 {
+  font-family: "questa";
+  font-size: 27px;
+  font-weight: 400;
+  position: relative;
+}
+.dest-slide-content h4::before {
+  content: "";
+  left: -105px;
+  top: 16px;
+  width: 100px;
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+}
+.dest-slide-content p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.dest-slide-btn {
+  margin-top: 19px;
+  display: inline-block !important;
+  background: transparent;
+  color: red;
+  text-align: center !important;
+  width: 207px !important;
+  padding: 12px 10px;
+  transition: 0.3s;
+  border: 1px solid red;
+}
+.dest-slide-btn:hover {
+  background-color: red;
+  color: white;
+}
+.dest-slide:last-child {
+  margin-right: 0; /* Removes the margin from the last slide */
+}
+
+.dest-prev-btn,
+.dest-next-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.dest-prev-btn {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+.dest-prev-btn:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.dest-next-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.dest-next-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+/* destination section responsive */
+@media (max-width: 1200px) {
+  .destination-section {
+    padding: 22px 57px;
+  }
+}
+@media (max-width: 1000px) {
+  .destination-section h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .destination-section {
+    padding: 22px 20px;
+  }
+  .dest-slide {
+    flex: 0 0 100%;
+  }
+  .dest-slider {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 450px) {
+  .dest-slide-content h4 {
+    font-size: 20px;
+  }
+  .dest-slide-content p {
+    font-size: 10px;
+  }
+}
+
+/* map section */
+.map-section {
+  background-color: #faf7f1;
+  padding: 70px 0;
+}
+.map-section h1 {
+  font-family: "questa";
+  font-size: 50px;
+  font-weight: 300;
+
+  text-align: center;
+}
+.map-hr {
+  width: 200px;
+  margin: 20px auto;
+}
+.map {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1000px;
+  text-align: center;
+}
+.map iframe {
+  width: 100%;
+}
+
+/* resonsive map section */
+@media (max-width: 1100px) {
+  .map {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .map-section {
+    padding: 40px 0;
+  }
+  .map-section h1 {
+    font-size: 30px;
+  }
+}
+
+/* hazte section */
+.hazte-section {
+  background-color: #faf7f1;
+}
+.hazte {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hazte-img {
+}
+.hazte-img img {
+}
+.hazte-content {
+}
+.hazte-content h3 {
+  font-family: "questa";
+  font-size: 42px;
+  font-weight: 300;
+  max-width: 400px;
+}
+
+/* responsive hazte section */
+@media (max-width: 1000px) {
+  .hazte {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .hazte {
+    padding: 12px 12px;
+  }
+  .hazte-content h3 {
+    font-size: 30px;
+  }
+}
+
+/* conditions section */
+.conditions-section {
+  background-color: #faf7f1;
+  padding: 100px 0;
+}
+.conditions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 12px;
+  column-gap: 12px;
+  padding: 12px 12px;
+}
+.condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.condition img {
+  width: 60px;
+}
+.condition p {
+}
+.conditons-btns {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+.conditon-btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+}
+.conditon-btn:hover {
+  text-decoration: underline;
+}
+.sign-in-btn {
+  margin-top: 19px;
+  display: inline-block !important;
+  background: transparent;
+  color: red;
+  text-align: center !important;
+  padding: 12px 10px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.sign-in-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* responsive conditions section */
+@media (max-width: 1000px) {
+  .conditions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .conditions-section {
+    padding: 50px 0;
+  }
+  .conditions {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+/* cuisine section */
+.cuisine-section {
+  padding: 50px 0;
+}
+.cuisine {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+}
+.cuisine h5 {
+  font-family: "questa";
+  font-style: italic;
+  font-size: 18px;
+  position: relative;
+  font-weight: 400;
+  width: 400px;
+  margin: 0 auto;
+}
+.cuisine h5::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.cuisine h5::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  right: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.cuisine h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 66px;
+}
+.cuisine p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 550px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+.cuisine a {
+  margin-top: 19px;
+  display: inline-block !important;
+  background: transparent;
+  color: red;
+  text-align: center !important;
+  padding: 12px 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.cuisine a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* cuisine section responsive */
+
+@media (max-width: 768px) {
+  .cuisine {
+    padding: 0 20px;
+  }
+  .cuisine h5::before {
+    width: 50px;
+    left: 50px;
+  }
+  .cuisine h5::after {
+    width: 50px;
+    right: 50px;
+  }
+  .cuisine h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .cuisine p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .cuisine h5 {
+    max-width: 300px;
+  }
+  .cuisine p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+  .cuisine h5::after {
+    display: none;
+  }
+  .cuisine h5::before {
+    display: none;
+  }
+}
+
+/* resuturants section */
+.resturants-section {
+  padding: 60px 0;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.res-slider-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.res-slider-btns {
+  text-align: right;
+}
+.res-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.res-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.res-slide {
+  flex: 0 0 calc(50% - 6px);
+  margin-right: 12px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.res-slide:hover .res-slide-content::after {
+  background-color: rgba(124, 123, 123, 0.3);
+}
+
+.res-slide a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.res-slide img {
+}
+.res-slide-content {
+  text-align: left;
+  position: absolute;
+  left: 47px;
+  top: 27px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.res-slide-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -46px;
+  top: -29px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+.res-slide-content h4 {
+  font-family: "questa";
+  font-size: 27px;
+  font-weight: 400;
+  position: relative;
+}
+.res-slide-content h4::before {
+  content: "";
+  left: -105px;
+  top: 16px;
+  width: 100px;
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+}
+.res-slide-content p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.res-slide-btn {
+  margin-top: 19px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+}
+.res-slide-btn:hover {
+  text-decoration: underline;
+}
+.res-slide:last-child {
+  margin-right: 0; /* Removes the margin from the last slide */
+}
+
+.res-prev-btn,
+.res-next-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.res-prev-btn {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+.res-prev-btn:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.res-next-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.res-next-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.res-bottom-p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(79, 79, 79);
+  margin: 6px 0;
+}
+.res-slide-btn i {
+  color: red;
+  display: inline-block;
+}
+/* destination section responsive */
+@media (max-width: 1200px) {
+  .resturants-section {
+    padding: 22px 57px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resturants-section {
+    padding: 22px 20px;
+  }
+  .res-slide {
+    flex: 0 0 100%;
+  }
+  .res-slider {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 450px) {
+  .res-slide-content h4 {
+    font-size: 20px;
+  }
+  .res-slide-content p {
+    font-size: 10px;
+  }
+}
+
+/* image gallery section */
+.image-gallery {
+  padding: 30px 30px;
+}
+.all-image {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+.all-image img {
+}
+
+/* nature section  */
+.nature-section {
+  padding: 12px 0;
+}
+.nature {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 425px 1fr;
+}
+.nature-img {
+}
+.nature-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 0 60px;
+  align-items: flex-start;
+}
+.nature-content h5 {
+  font-family: "questa";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(35, 35, 35);
+  margin-left: 50px;
+  position: relative;
+}
+.nature-content h5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -40px;
+  top: 12px;
+  z-index: 1;
+  background-color: black;
+}
+.nature-content h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgb(35, 35, 35);
+}
+.nature-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(75, 75, 75);
+}
+.nature-btn {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  top: 23px;
+}
+.nature-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* nature section responsive */
+@media (max-width: 1000px) {
+  .nature-content {
+    padding: 0 10px 0 10px;
+  }
+  .nature-content h1 {
+    font-size: 40px;
+
+    line-height: 46px;
+  }
+  .nature-content p {
+    font-size: 14px;
+  }
+  .nature-img {
+    width: 300px;
+  }
+  .nature-content {
+    padding: 0 10px 0 10px;
+    margin-left: -25px;
+  }
+}
+@media (max-width: 768px) {
+  .nature {
+    position: relative;
+    z-index: 4;
+  }
+  .nature-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    left: 14px;
+    top: 30px;
+    padding: 30px 12px 30px 30px;
+    margin-left: 30px;
+  }
+}
+
+/* image-section */
+.image-section {
+  margin: 30px 30px;
+}
+.image {
+  text-align: right;
+}
+.image img {
+}
+
+/* responsive image section */
+@media (max-width: 470px) {
+  .image-section {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 416px) {
+  .image-section {
+    margin-top: 200px;
+  }
+}
+
+/* parador section */
+
+.parador-section {
+  padding: 60px 0;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.para-slider-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.para-slider-btns {
+  text-align: right;
+}
+.para-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.para-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.para-slide {
+  flex: 0 0 calc(50% - 6px);
+  margin-right: 12px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.para-slide:hover .para-slide-content::after {
+  background-color: rgba(124, 123, 123, 0.3);
+}
+
+.para-slide a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.para-slide img {
+}
+.para-slide-content {
+  text-align: left;
+  position: absolute;
+  left: 47px;
+  top: 27px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+.para-slide-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -46px;
+  top: -29px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+.para-slide-content h4 {
+  font-family: "questa";
+  font-size: 27px;
+  font-weight: 400;
+  position: relative;
+}
+.para-slide-content h4::before {
+  content: "";
+  left: -105px;
+  top: 16px;
+  width: 100px;
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+}
+.para-slide-content p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.para-slide-btn {
+  margin-top: 19px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+}
+.para-slide-btn:hover {
+  text-decoration: underline;
+}
+.para-slide:last-child {
+  margin-right: 0; /* Removes the margin from the last slide */
+}
+
+.para-prev-btn,
+.para-next-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.para-prev-btn {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+.para-prev-btn:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.para-next-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.para-next-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.para-bottom-p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(79, 79, 79);
+  margin: 6px 0;
+}
+.para-slide-btn i {
+  color: red;
+  display: inline-block;
+}
+/* destination section responsive */
+@media (max-width: 1200px) {
+  .parador-section {
+    padding: 22px 57px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parador-section {
+    padding: 22px 20px;
+  }
+  .para-slide {
+    flex: 0 0 100%;
+  }
+  .para-slider {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 450px) {
+  .para-slide-content h4 {
+    font-size: 20px;
+  }
+  .para-slide-content p {
+    font-size: 10px;
+  }
+}
+
+/* gift  section */
+
+.gift-section {
+  padding: 50px 0;
+}
+.gift {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+}
+
+.gift h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 66px;
+}
+.gift p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 550px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+.gift a {
+  margin-top: 19px;
+  display: inline-block !important;
+  background: transparent;
+  color: red;
+  text-align: center !important;
+  padding: 12px 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.gift a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* cuisine section responsive */
+
+@media (max-width: 768px) {
+  .gift {
+    padding: 0 20px;
+  }
+
+  .gift h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .gift p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .gift p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+}
+
+/* gift box section */
+.gift-box-section {
+  padding: 60px 0;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.gift-box-slider-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.gift-box-slider-btns {
+  text-align: right;
+}
+.gift-box-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gift-box-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gift-box-slide {
+  flex: 0 0 calc(50% - 6px);
+  margin-right: 12px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gift-box-slide a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.gift-box-slide img {
+}
+
+.gift-box-slide-btn {
+  margin-top: 19px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+}
+.gift-box-slide-btn:hover {
+  text-decoration: underline;
+}
+.gift-box-slide:last-child {
+  margin-right: 0; /* Removes the margin from the last slide */
+}
+
+.gift-box-prev-btn,
+.gift-box-next-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.gift-box-prev-btn {
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+.gift-box-prev-btn:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.gift-box-next-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+.gift-box-next-btn:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.gift-box-bottom-content h4 {
+  font-family: "questa";
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.gift-box-bottom-content h4:hover {
+  color: red;
+}
+.gift-box-bottom-p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(79, 79, 79);
+  margin: 6px 0;
+}
+.gift-box-slide-btn i {
+  color: red;
+  display: inline-block;
+}
+/* destination section responsive */
+@media (max-width: 1200px) {
+  .gift-box-section {
+    padding: 22px 57px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gift-box-section {
+    padding: 22px 20px;
+  }
+  .gift-box-slide {
+    flex: 0 0 100%;
+  }
+  .gift-box-slider {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 450px) {
+  .gift-box-slide-content h4 {
+    font-size: 20px;
+  }
+  .gift-box-slide-content p {
+    font-size: 10px;
+  }
+}
+
+/* opportunity section */
+
+.opportunity-section {
+  padding: 12px 0;
+}
+.opportunity {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 425px 1fr;
+}
+.opportunity-img {
+}
+.opportunity-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 0 60px;
+  align-items: flex-start;
+}
+.opportunity-content h5 {
+  font-family: "questa";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(35, 35, 35);
+  margin-left: 50px;
+  position: relative;
+}
+.opportunity-content h5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -40px;
+  top: 12px;
+  z-index: 1;
+  background-color: black;
+}
+.opportunity-content h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgb(35, 35, 35);
+}
+.opportunity-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(75, 75, 75);
+}
+.opportunity-btn {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  top: 23px;
+}
+.opportunity-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* nature section responsive */
+@media (max-width: 1000px) {
+  .opportunity-content {
+    padding: 0 10px 0 10px;
+  }
+  .opportunity-content h1 {
+    font-size: 40px;
+
+    line-height: 46px;
+  }
+  .opportunity-content p {
+    font-size: 14px;
+  }
+  .opportunity-img {
+    width: 300px;
+  }
+  .opportunity-content {
+    padding: 0 10px 0 10px;
+    margin-left: -25px;
+  }
+}
+@media (max-width: 768px) {
+  .opportunity {
+    position: relative;
+    z-index: 4;
+  }
+  .opportunity-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    left: 14px;
+    top: 30px;
+    padding: 30px 12px 30px 30px;
+    margin-left: 30px;
+  }
+}
+
+/* experience section */
+
+.experience-section {
+  padding: 12px 0;
+}
+.experience {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 425px;
+}
+.experience-img {
+}
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 0 60px;
+  align-items: flex-start;
+}
+.experience-content h5 {
+  font-family: "questa";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(35, 35, 35);
+  margin-left: 50px;
+  position: relative;
+}
+.experience-content h5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -40px;
+  top: 12px;
+  z-index: 1;
+  background-color: black;
+}
+.experience-content h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgb(35, 35, 35);
+}
+.experience-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(75, 75, 75);
+}
+.experience-btn {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  top: 23px;
+}
+.experience-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* experience section responsive */
+@media (max-width: 1000px) {
+  .experience-content {
+    padding: 0 10px 0 10px;
+  }
+  .experience-content h1 {
+    font-size: 40px;
+
+    line-height: 46px;
+  }
+  .experience-content p {
+    font-size: 14px;
+  }
+  .experience-img {
+    width: 300px;
+  }
+  .experience-content {
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .experience {
+    position: relative;
+    z-index: 4;
+  }
+  .experience-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    left: 14px;
+    top: 30px;
+    padding: 30px 12px 30px 30px;
+    margin-left: 30px;
+  }
+}
+
+/* celebrate section */
+
+.celebrate-section {
+  padding: 50px 0;
+  background-color: #faf7f1;
+}
+.celebrate {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+}
+.celebrate h5 {
+  font-family: "questa";
+  font-style: italic;
+  font-size: 18px;
+  position: relative;
+  font-weight: 400;
+  width: 400px;
+  margin: 0 auto;
+}
+.celebrate h5::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.celebrate h5::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  right: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.celebrate h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 66px;
+}
+.celebrate p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 550px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+/* cuisine section responsive */
+
+@media (max-width: 768px) {
+  .celebrate {
+    padding: 0 20px;
+  }
+  .celebrate h5::before {
+    width: 50px;
+    left: 50px;
+  }
+  .celebrate h5::after {
+    width: 50px;
+    right: 50px;
+  }
+  .celebrate h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .celebrate p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .celebrate h5 {
+    max-width: 300px;
+  }
+  .celebrate p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 400px;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+  .celebrate h5::after {
+    display: none;
+  }
+  .celebrate h5::before {
+    display: none;
+  }
+}
+
+/* event section */
+.event-section {
+  background-color: #faf7f1;
+  padding: 30px 0;
+}
+.events {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.event {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.event-img-link {
+}
+.event-img {
+  position: relative;
+  z-index: 1;
+}
+
+.event-img::after {
+  content: "";
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.event-img:hover .event-img::after {
+  display: block;
+}
+.event-btn {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: red;
+
+  text-align: center;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+}
+.event-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* event section responsive */
+@media (max-width: 1000px) {
+  .events {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .events {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .event-img {
+    text-align: center;
+  }
+}
+
+/* unforgettable section */
+
+.unforgettable-section {
+  padding: 30px 0;
+}
+.unforgettable {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 425px;
+}
+.unforgettable-img {
+}
+.unforgettable-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 0 60px;
+  align-items: flex-start;
+}
+.unforgettable-content h5 {
+  font-family: "questa";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(35, 35, 35);
+  margin-left: 50px;
+  position: relative;
+}
+.unforgettable-content h5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -40px;
+  top: 12px;
+  z-index: 1;
+  background-color: black;
+}
+.unforgettable-content h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgb(35, 35, 35);
+}
+.unforgettable-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(75, 75, 75);
+}
+.unforgettable-btn {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  top: 23px;
+}
+.unforgettable-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* experience section responsive */
+@media (max-width: 1000px) {
+  .unforgettable-content {
+    padding: 0 10px 0 10px;
+  }
+  .unforgettable-content h1 {
+    font-size: 40px;
+
+    line-height: 46px;
+  }
+  .unforgettable-content p {
+    font-size: 14px;
+  }
+  .unforgettable-img {
+    width: 300px;
+  }
+  .unforgettable-content {
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .unforgettable {
+    position: relative;
+    z-index: 4;
+  }
+  .unforgettable-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    left: 14px;
+    top: 30px;
+    padding: 30px 12px 30px 30px;
+    margin-left: 30px;
+  }
+}
