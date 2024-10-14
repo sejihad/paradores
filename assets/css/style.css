@@ -2184,3 +2184,151 @@ a {
     margin-left: 30px;
   }
 }
+
+/* network section */
+.network-section {
+  padding: 50px 0;
+  background-color: #faf7f1;
+}
+.network {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+}
+.network h5 {
+  font-family: "questa";
+  font-style: italic;
+  font-size: 18px;
+  position: relative;
+  font-weight: 400;
+  width: 400px;
+  margin: 0 auto;
+}
+.network h5::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.network h5::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  right: 20px;
+  top: 12px;
+  height: 1px;
+  z-index: 1;
+  background-color: black;
+}
+.network h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 66px;
+}
+
+/* cuisine section responsive */
+
+@media (max-width: 768px) {
+  .network {
+    padding: 0 20px;
+  }
+  .network h5::before {
+    width: 50px;
+    left: 50px;
+  }
+  .network h5::after {
+    width: 50px;
+    right: 50px;
+  }
+  .network h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .network h5 {
+    max-width: 300px;
+  }
+
+  .network h5::after {
+    display: none;
+  }
+  .network h5::before {
+    display: none;
+  }
+}
+
+/* network images  */
+.network-images {
+  padding: 50px 0;
+}
+.network-image {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* network image responsive */
+@media (max-width: 1100px) {
+  .network-image {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .network-images {
+    display: none;
+  }
+}
+
+/* networks icons */
+.network-icons {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.network-icons a {
+  border: 1px solid #fe285b;
+  transition: 0.3s;
+  background-color: #fe285b;
+  font-size: 30px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.network-icons a:hover {
+  background-color: transparent;
+  color: #fe285b;
+}
+.network-icons a i {
+}
+
+/* responsive netwoorks icons */
+@media (max-width: 600px) {
+  .network-icons {
+    column-gap: 20px;
+  }
+  .network-icons a {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}
