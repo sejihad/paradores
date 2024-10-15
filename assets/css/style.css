@@ -75,14 +75,136 @@ a {
   padding: 29px 0;
   column-gap: 28px;
 }
+
+/* mobile menu */
 .toggle-nav {
   display: none;
 }
+
 .close-nav {
   display: none;
 }
 .logo-link {
   color: white;
+}
+.mobile-menu {
+  display: none;
+}
+/* mobile menu responsive */
+@media (max-width: 1200px) {
+  .toggle-nav {
+    display: block;
+  }
+  .toggle-nav i {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    position: fixed;
+    left: 12px;
+    z-index: 1000;
+    top: 10px;
+  }
+
+  .close-nav {
+    display: block;
+
+    color: black;
+    font-size: 32px;
+  }
+  .close-nav i {
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  .mobile-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1004;
+    overflow: scroll;
+    transition: 0.3s;
+    display: block;
+  }
+  .mobile-menu-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .mobile-menu-logo {
+    text-align: center;
+  }
+  .mobile-menu-logo img {
+    width: 150px;
+  }
+  .mobile-top-nav {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 12px;
+  }
+  .mobile-top-nav ul {
+  }
+  .mobile-top-nav li a {
+    font-family: "questa";
+    font-size: 26px;
+    font-weight: 300;
+    color: rgb(35, 35, 35);
+  }
+  .mobile-bottom-nav {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 12px;
+  }
+  .mobile-bottom-nav ul {
+  }
+  .mobile-bottom-nav li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(240, 30, 80);
+  }
+  .mobile-lang {
+  }
+  .mobile-select {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 3px 1px;
+  }
+  .mobile-select option {
+    color: black;
+  }
+  .mobile-select:hover {
+    border-color: #2980b9;
+  }
+
+  .mobile-select:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+}
+
+@media (max-width: 1000px) {
+  .mobile-menu-inner {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-inner {
+    align-items: center;
+  }
+  .mobile-top-nav {
+    align-items: center;
+    text-align: center;
+  }
+  .mobile-bottom-nav {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .logo-link img {
@@ -458,35 +580,6 @@ a {
     row-gap: 6px;
     position: relative;
     padding: 29px 12px;
-  }
-  .toggle-nav {
-    display: block;
-  }
-  .toggle-nav i {
-    color: white;
-    font-size: 32px;
-    position: fixed;
-    left: 12px;
-    top: 10px;
-  }
-  .mobile-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    z-index: 90;
-    display: none;
-  }
-  .close-nav {
-    display: block;
-    z-index: 100;
-    color: black;
-    font-size: 32px;
-    position: fixed;
-    left: 12px;
-    top: 10px;
   }
   .menu-top {
     position: absolute;
@@ -2330,5 +2423,320 @@ a {
     height: 30px;
     width: 30px;
     line-height: 30px;
+  }
+}
+
+/* news section */
+
+.news-section {
+  padding: 30px 0;
+  background-color: #faf7f1;
+}
+.news {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 425px;
+}
+.news-img {
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 0 60px;
+  align-items: flex-start;
+}
+.news-content h5 {
+  font-family: "questa";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(35, 35, 35);
+  margin-left: 50px;
+  position: relative;
+}
+.news-content h5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -40px;
+  top: 12px;
+  z-index: 1;
+  background-color: black;
+}
+.news-content h1 {
+  font-family: "questa";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgb(35, 35, 35);
+}
+.news-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(75, 75, 75);
+}
+.news-form {
+  margin-top: 12px;
+}
+.news-input {
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+.news-input:focus {
+  outline: none;
+}
+.news-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+.news-btn {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: transparent;
+  color: red;
+  text-align: left !important;
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  top: 23px;
+}
+.news-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* experience section responsive */
+@media (max-width: 1000px) {
+  .news-content {
+    padding: 0 10px 0 10px;
+  }
+  .news-content h1 {
+    font-size: 40px;
+
+    line-height: 46px;
+  }
+  .news-content p {
+    font-size: 14px;
+  }
+  .news-img {
+    width: 300px;
+  }
+  .news-content {
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .news {
+    position: relative;
+    z-index: 4;
+  }
+  .news-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(40px);
+    left: 14px;
+    top: 30px;
+    padding: 30px 12px 30px 30px;
+    margin-left: 30px;
+  }
+}
+
+/* footer section */
+.footer-section {
+  padding: 60px 0;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.footer-top {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo-btn {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo-btn a {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo-btn img {
+  display: block;
+  width: 150px;
+}
+.footer-logo-btn a {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: white !important;
+  color: red !important;
+
+  transition: 0.3s;
+  border: none;
+  border: 1px solid red;
+  padding: 13px 18px;
+  position: relative;
+  text-align: center;
+  top: 23px;
+}
+.footer-logo-btn a:hover {
+  background-color: red !important;
+  color: white !important;
+}
+.information-nav h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
+  margin-bottom: 12px;
+}
+.information-nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.information-nav ul li a {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(35, 35, 35);
+}
+.company-nav h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
+  margin-bottom: 12px;
+}
+.company-nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.company-nav ul li,
+.information-nav ul li {
+  transition: 0.3s;
+}
+.company-nav ul li:hover,
+.information-nav ul li:hover {
+  background-color: #dad2d2;
+}
+.company-nav ul li a {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(35, 35, 35);
+}
+.download {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.download h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(35, 35, 35);
+}
+.download img {
+  width: 150px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(35, 35, 35);
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  border: 1px solid #fe285b;
+  transition: 0.3s;
+  background-color: #fe285b;
+  font-size: 15px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+.footer-social a:hover {
+  background-color: transparent;
+  color: #fe285b;
+}
+.footer-bottom-nav ul {
+  display: flex;
+  column-gap: 6px;
+}
+.footer-bottom-nav ul li a {
+  color: rgb(240, 30, 80);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* footer section responsive */
+@media (max-width: 1200px) {
+  .footer-section {
+    padding: 60px 30px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-copy p {
+    font-size: 10px;
+  }
+  .footer-social {
+    column-gap: 5px;
+  }
+}
+@media (max-width: 850px) {
+  .footer-bottom {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+  }
+  .download {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-top {
+  }
+  .footer-logo-btn {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .download {
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 430px) {
+  .footer-section {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 340px) {
+  .company-nav {
+    margin-top: 30px;
   }
 }

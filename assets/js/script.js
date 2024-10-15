@@ -1,20 +1,49 @@
 const header = document.querySelector(".header");
 const stickyHeader = document.querySelector(".s-header");
 const bottomMenuList = document.querySelectorAll(".menu-bottom li a");
+const mobileBottomAllMenu = document.querySelectorAll(
+  ".mobile-menu-bottom li a"
+);
+const mobileTopAllMenu = document.querySelectorAll(".mobile-menu-top li a");
 const topMenuList = document.querySelectorAll(".menu-top li a");
 const logoLink = document.querySelector(".logo-link");
 const customSelect = document.querySelector(".custom-select");
 const toggleNav = document.querySelector(".toggle-nav");
+const toggleIcon = document.querySelector(".toggle-nav i");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeNav = document.querySelector(".close-nav");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 400) {
     stickyHeader.style.display = "flex";
     toggleNav.classList.add("t-nav");
+    toggleIcon.style.color = "black";
   } else {
     stickyHeader.style.display = "none";
     toggleNav.classList.remove("t-nav");
+    toggleIcon.style.color = "white";
   }
 });
+// mobile menu open
+toggleNav.addEventListener("click", () => {
+  mobileMenu.style.left = "0";
+});
+// mobile menu close
+closeNav.addEventListener("click", () => {
+  mobileMenu.style.left = "-100%";
+});
 
+// If any mobile menu item is clicked, remove the mobile menu
+// mobileTopAllMenu.forEach((e) => {
+//   e.addEventListener("click", () => {
+//     mobileMenu.style.left = "-100%";
+//   });
+// });
+// mobileBottomAllMenu.forEach((e) => {
+//   e.addEventListener("click", () => {
+//     mobileMenu.style.left = "-100%";
+//   });
+// });
+console.log(mobileBottomAllMenu, mobileTopAllMenu);
 //  destination slider
 let currentIndex = 0;
 const slides = document.querySelectorAll(".dest-slide");
