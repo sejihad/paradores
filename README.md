@@ -18,3 +18,7 @@ This is a web project built using HTML, CSS, JavaScript, and jQuery. The website
 ## Contributing
 
 Contributions are welcome! Please fork the repository and make a pull request.
+
+### Homepage
+
+![Homepage Screenshot](assets/img/homepage.jpg)
