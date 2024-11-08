@@ -21,4 +21,4 @@ Contributions are welcome! Please fork the repository and make a pull request.
 
 ### Homepage
 
-![Homepage Screenshot](assets/img/homepage.jpg)
+![Homepage Screenshot](assets/img/homepage.png)
